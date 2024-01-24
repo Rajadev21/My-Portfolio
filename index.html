@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raja's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scrpit.js"></script>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header session start -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img id="logo" src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web developer</p>
+                <h1>Hi, <span>I'm Raja Bomma</span></h1>
+            </div>
+
+        </div>
+    </div>
+    <!-- header session completed -->
+
+    <!-- about session start -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img id="about-img" src="images/about.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hey there! I'm Raja Bomma, a recent graduate in Computer Science from Chandigarh
+                        University.During these days, I developed a project called SmartContactManager using Spring
+                        Boot, and guess what? I didn't stop there - I even deployed it! Yep, I'm that person who loves
+                        turning ideas into reality.</p><br>
+                    <p>When it comes to coding, I've learnt Data Structures and Algorithms using Java. Front-end
+                        technology like HTML, CSS, Bootstrap, and JavaScript.and in backedn i have learnt spring boot.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span>: Java</li>
+                            <li><span>Web Technologies</span>: HTML, CSS, Bootstrap, JavaScript</li>
+                            <li><span>Frameworks</span>: Spring Boot</li>
+                            <li><span>DataBase</span>: Mysql</li>
+                            <li><span>Data Structures and Algorithms</span>: in java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Smart Contact Manager</span></li>
+                            <li><span>Role </span>: Backend Developer</li>
+                            <li><span>Duration </span>: [12/23 - 17/24]</li>
+                            <li><span>Description</span>: SmartContactManager is a dynamic and user-friendly web
+                                application with efficiency and ease.The primary goal of this project is to empower
+                                users to effortlessly organize their contacts by providing a secure registration and
+                                login system.</li>
+                            <li><span>Key feature </span> <br>
+                                1. User Authentication<br>
+                                2. Contact Operations<br>
+                                3. User-Friendly Interface: <br>
+                                4. CRUD Operations<br>
+                                5. Data Security<br>
+                            </li>
+                            <li><a href="https://smartcontact.up.railway.app/"><span>Click to know more</span></a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+
+                        <ul>
+                            <li><span>Chandigarh University</span></li>
+                            <li><span>Graduation Year </span>: 2023</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about session completed -->
+
+    <!-- service session start -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="service-list">
+                <div class="centered-content">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-end development</h2>
+                    <p>using front-end technology to develop web applications.</p>
+                </div>
+                <div class="centered-content">
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java development</h2>
+                    <p>using the Spring Boot framework to build apps for better development and deployment.</p>
+                </div>
+                <div class="centered-content">
+                    <i class="fa-brands fa-java"></i>
+                    <h2>DSA with Java</h2>
+                    <p>having knowledge in problem-solving by sloving the DSA problems usign java.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service completed -->
+
+    <!-- portfolio start -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Front-end technology</h3>
+                        <p>used HTML, CSS, Bootstrap, and JavaScript to create a visually beautiful and user-friendly
+                            interface for an engaging web experience. To explore, click the links below.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" alt="">
+                    <div class="layer">
+                        <h3>Java Backend(spring boot)</h3>
+                        <p>Using Spring Boot, an effective web application was developed with a priority on user
+                            authentication, secure data handling, and efficient development. To explore, click the link
+                            below.</p>
+                        <a href="https://smartcontact.up.railway.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png" alt="">
+                    <div class="layer">
+                        <h3>DSA with Java</h3>
+                        <p>used Java to apply problem-solving techniques in Data Structures and Algorithms problems. To
+                            explore, click the links below.
+                        </p>
+                        <a href="https://drive.google.com/file/d/10LwCd0VA5BCvUv0TV-6eBzZP-qKno3Sk/view?usp=drive_link"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio end -->
+
+    <!-- contact start -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> rajabomma21@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8688948038</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Rajadev21?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rajabomma/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/RajaBomma_resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id=""  rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <!-- <a href="" class="btn btn2">Submit</a> -->
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 Raja. All rights reserved. | Designed and developed by Raja Bomma <i class="fa-solid fa-heart"></i></p>
+
+        </div>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwk1IObyDIzeAjG22chIGjaC2ijpjnMhvsr4FJ8hgAJ3bWC0YXTy6fPbjL5oZIgmt4rjQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <script src="scrpit.js"></script>
+</body>
+
+</html>
